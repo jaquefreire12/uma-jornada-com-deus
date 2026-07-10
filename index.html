@@ -88,6 +88,31 @@
       .hero-benefits{display:grid;grid-template-columns:1fr;gap:8px}
       .hero-benefits span{justify-content:center}
     }
+
+    /* Refinamento mobile: hero mais limpo e leitura mais confortável */
+    .prayer-icon{font-size:38px;line-height:1;display:flex;align-items:center;justify-content:flex-start}
+    @media (max-width:640px){
+      .hero-grid{gap:30px}
+      .hero .eyebrow{font-size:11px;line-height:1.35;padding:8px 11px;display:flex;width:100%;border-radius:18px}
+      .hero h1{font-size:clamp(34px,10.2vw,42px);line-height:1.02;letter-spacing:-.05em;margin-top:18px}
+      .hero .lead{font-size:16px;line-height:1.5;margin-top:20px}
+      .hero .desc{font-size:14.5px;line-height:1.55;margin-top:16px;color:#705852}
+      .hero-cta{margin-top:22px}
+      .hero .btn{font-size:15px;padding:0 18px;line-height:1.25}
+      .hero-benefits{grid-template-columns:repeat(3,1fr);gap:6px;margin-top:12px}
+      .hero-benefits span{font-size:10.5px;line-height:1.25;padding:8px 5px;text-align:center;min-height:48px}
+      .hero .photo-card{min-height:410px;margin-top:2px}
+      .future-section .section-title h2{font-size:34px}
+      .future-intro{font-size:22px!important}
+      .today-card h2{font-size:34px}
+    }
+    @media (max-width:390px){
+      .hero h1{font-size:32px}
+      .hero .lead{font-size:15.5px}
+      .hero .desc{font-size:14px}
+      .hero-benefits{grid-template-columns:1fr}
+      .hero-benefits span{min-height:auto}
+    }
 </style>
 <!-- Meta Pixel Code -->
 <script>
@@ -249,7 +274,7 @@
 <article class="card"><svg class="icon" fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"></path></svg><h3>Afirmações Bíblicas</h3><p>Para substituir pensamentos negativos pelas verdades que Deus diz sobre você.</p></article>
 <article class="card"><svg class="icon" fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="M12 8v8M8 12h8"></path></svg><h3>Gratidão do Dia</h3><p>Um convite para reconhecer as bênçãos presentes na sua vida e cultivar um coração mais grato.</p></article>
 <article class="card"><svg class="icon" fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><path d="M9 18h6M10 22h4M8 14a6 6 0 1 1 8 0c-1 1-1 2-1 2H9s0-1-1-2z"></path></svg><h3>Exercício Mental</h3><p>Práticas simples para desacelerar, refletir e direcionar seus pensamentos para aquilo que edifica.</p></article>
-<article class="card"><svg class="icon" fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7H14a3.5 3.5 0 0 1 0 7H6"></path></svg><h3>Oração</h3><p>Um momento para conversar com Deus, entregar seus fardos e fortalecer sua intimidade com Ele.</p></article>
+<article class="card"><div class="icon prayer-icon" aria-hidden="true">🙏</div><h3>Oração</h3><p>Um momento para conversar com Deus, entregar seus fardos e fortalecer sua intimidade com Ele.</p></article>
 <article class="card"><svg class="icon" fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg><h3>Desafio do Dia</h3><p>Porque a transformação acontece quando colocamos a Palavra em prática.</p></article>
 </div>
 <div class="reveal">
